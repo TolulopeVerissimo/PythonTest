@@ -1,9 +1,9 @@
-Python Assessment
+# Python Assessment
 
-Suppose you have files of unsorted data from Macys.com. You want to sort the data
-into categories, so a Machine Learning algorithm can train on them.
+-   Suppose you have files of unsorted data from Macys.com.
+-   You want to sort the data into categories, so a Machine Learning algorithm can train on them.
 
-Write a class to do the following:
+### Write a class to do the following:
 
 -   Read text files: words1.txt, words2.txt, words3.txt
 
@@ -28,8 +28,64 @@ Write a class to do the following:
 
 -   Elements will be sorted in ascending order. Ints should be printed 0, 1, 2, etc.
 
-## Your class will have methods to print the number of elements in each category: int_count(), url_count() etc.
+### Your class will have methods to print the number of elements in each category: int_count(), url_count() etc.
 
-## Write a script or main routine to use your class to read all text files and print out each category.
+### Write a script or main routine to use your class to read all text files and print out each category.
 
 -   All code can be in one file.
+
+## Running
+
+From a terminal with Python installed, run the following to start the script:
+
+```
+python3 main.py
+```
+
+## Requirement
+
+My approach to the challenge was to create boolean validators for each parameter within the requirements -- then sorting and printing/counting each category.
+
+I included a set to prevent duplicate storage, used regex to simplify string search, converted strings to integers when necessary, and sorted each set-List.
+
+While checking for palindromes, I excluded the use of numbers because the directions explicitly mentioned words.
+
+## Methods
+
+### Boolean Validators
+
+```
+check_all(self)
+is_palindrome(self, string)
+is_urls(self, string)
+is_phone_numbers(self, string)
+is_ints(self, string)
+is_words(self, string)
+```
+
+### Print/Count All Categories
+
+```
+count_all(self)
+print_all(self)
+```
+
+### Print Categories
+
+```
+print_urls(self)
+print_ints(self)
+print_words(self)
+print_palindromes(self)
+print_phone_numbers(self)
+```
+
+### Count Elements within Categories
+
+```
+urls_count(self)
+ints_count(self)
+words_count(self)
+palindromes_count(self)
+phone_numbers_count(self)
+```

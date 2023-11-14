@@ -96,7 +96,19 @@ for file in glob.glob("*.txt"):
             wordList.add(line.strip())
 
 element = Organize(wordList)
-
 element.check_all()
+
 # element.print_all()
+# element.print_urls()
+# element.print_ints()
+# element.print_words()
+# element.print_palindromes()
+# element.print_phone_numbers()
+
 # element.count_all()
+# element.urls_count()
+# element.ints_count()
+# element.words_count()
+# element.palindromes_count()
+# element.phone_numbers_count()
+
